@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.jpeg" alt="Pizza Shop Logo">
+                    <h1>Pizza Shop</h1>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Delicious Pizza, Delivered Fast!</h2>
+                <p>Experience the best pizza in town, made with fresh ingredients and delivered right to your door.</p>
+                <a href="#menu" class="cta-button">Order Now</a>
+            </div>
+        </section>
+
+        <section class="featured-pizzas">
+            <h2>Featured Pizzas</h2>
+            <div class="pizza-gallery">
+                <div class="pizza-item">
+                    <img src="images/margareta.avif" alt="Margherita Pizza">
+                    <h3>Signature Margherita</h3>
+                    <p>Fresh Basil, Mozzarella, and San Marzano Tomatoes</p>
+                    <p class="price">$12.99</p>
+                    <button class="cta-button" data-price="12.99">Add to Cart</button>
+                </div>
+                <div class="pizza-item">
+                    <img src="images/maxican.webp" alt="Mexican Pizza">
+                    <h3>Mexican Pizza</h3>
+                    <p>Refried black beans, Green onion, tomato, and jalapeño pepper, Mexican cheese blend</p>
+                    <p class="price">$14.99</p>
+                    <button class="cta-button" data-price="14.99">Add to Cart</button>
+                </div>
+                <div class="pizza-item">
+                    <img src="images/panner.png" alt="BBQ Panner Pizza">
+                    <h3>BBQ Panner</h3>
+                    <p>Grilled Panner, BBQ Sauce, Onions, and Cilantro</p>
+                    <p class="price">$13.99</p>
+                    <button class="cta-button" data-price="13.99">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        
+       
+
+        <section id="about-us">
+            <div class="container">
+              <div class="about-content">
+                <h2>About Us</h2>
+                <p>
+                  Welcome to <strong>Pizza Haven</strong>, where passion meets flavor! Our journey began with a simple idea: to craft the perfect pizza using time-honored recipes and the freshest ingredients. Every slice tells a story of tradition, quality, and love for great food.
+                </p>
+                <p>
+                  Our team of dedicated chefs works tirelessly to bring you an unforgettable dining experience, whether you’re dining in, taking out, or enjoying our pizzas at home. From our signature wood-fired crusts to our unique toppings, every bite is a celebration of taste.
+                </p>
+                <h3>Meet the Team</h3>
+                <div class="team">
+                  <div class="team-member">
+                    <img src="images/headchef.jpeg" alt="Chef John Doe">
+                    <h4>Chef John Doe</h4>
+                    <p>Head Chef & Founder</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="images/chef2.jpeg" alt="Chef Jane Smith">
+                    <h4>Chef Jane Smith</h4>
+                    <p>Pizza Specialist</p>
+                  </div>
+                  <div class="team-member">
+                    <img src="images/chef3.jpeg" alt="Chef Michael Lee">
+                    <h4>Chef Michael Lee</h4>
+                    <p>Sauce Master</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="contact-info">
+            <div class="container">
+                <h2>Visit Us</h2>
+                
+                <div class="contact-details">
+                    <p><strong>Address:</strong> 123 Pizza Lane, Flavor Town, FT 54321</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Email:</strong> info@pizzashop.com</p>
+                    <p><strong>Business Hours:</strong> Mon-Sun: 11:00 AM - 11:00 PM</p>
+                </div>
+                <form class="contact-form">
+                    <h3>Contact Us</h3>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2910748816514!2d144.9630583157478!3d-37.81362797975143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1fd7f21%3A0x5045675218ce840!2sPizza%20Shop!5e0!3m2!1sen!2sus!4v1633118616212!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+            </div>
+        </section>  
+
+  <!-- Cart Section -->
+  <section id="cart" class="cart-section">
+    <h2>Your Cart</h2>
+    <div class="cart-items">
+        <!-- Cart items will be dynamically added here -->
+    </div>
+    <div class="cart-total">
+        <h3>Total: $<span id="cart-total">0.00</span></h3>
+        <button id="checkout-button">Checkout</button>
+    </div>
+</section>
+
+
+</body>
+</html>
